@@ -1,0 +1,109 @@
+@import url("../../global_styles/index.css");
+
+.header-nav-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-nav-box li {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 4px;
+  list-style: none;
+  gap: 10px;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.header-nav-title-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.header-nav-decs-box:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: translateX(10px);
+  opacity: 0.7;
+}
+
+.header-nav-decs svg {
+  width: 15px;
+  height: 15px;
+  padding-right: 10px;
+}
+
+.header-nav-title {
+  font-family: "PoppinsRegular", "SpoqaHanSansNeoBold", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+}
+
+.header-nav-title::after {
+  content: "";
+  background: #3aebb6;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: 15px;
+  margin-left: -5px;
+}
+
+.header-nav-sub-title {
+  font-family: "PoppinsRegular", "SpoqaHanSansNeoRegular", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.header-nav-decs {
+  font-family: "SpoqaHanSansNeoRegular", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+.header-nav-ps {
+  font-family: "SpoqaHanSansNeoRegular", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #e9ebee;
+  opacity: 0.6;
+}
+
+@media (max-width: 1450px) {
+  .header-nav-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 1000px;
+
+    .header-nav-sub-title,
+    .header-nav-ps {
+      display: none;
+    }
+  }
+
+  .header-nav-title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    margin: 0;
+  }
+
+  .header-nav-decs svg {
+    width: 25px;
+    height: 25px;
+  }
+}

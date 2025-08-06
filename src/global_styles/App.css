@@ -1,0 +1,359 @@
+@import url("./index.css");
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  padding: 0 30px 0 30px;
+}
+
+.header-nav {
+  position: fixed;
+  z-index: 100;
+  width: 300px;
+  height: auto;
+  padding: 30px 0 30px 25px; /*12-> 3-> 6-> 9 방향*/
+  border: none;
+  border-radius: 40px;
+  background: #425ce0;
+  color: white;
+  /* box-shadow: 1px 1px 30px 1px #fc4e00; */
+}
+
+.main-card-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+  height: 100%;
+  gap: 80px;
+}
+
+.main-card-home {
+  width: 900px;
+  height: auto;
+  padding: 65px 80px 65px 80px;
+  border: none;
+  border-radius: 40px;
+  background: #425ce0;
+  background-image: url(../assets/see.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.main-card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.main-card-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-card-profile {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  height: auto;
+  padding: 65px 80px 65px 80px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 1px 1px 10px 1px #d3d3d3;
+}
+
+.main-card-profile-tilte {
+  width: 200px;
+  height: 100%;
+}
+
+.main-card-profile-title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.main-card-profile-tilte-text {
+  font-family: "PoppinsRegular", "SpoqaHanSansNeoBold", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.underline {
+  width: 1.5rem;
+  height: 4px;
+  margin-top: 5px;
+  border-radius: 50px;
+  background: #3aebb6;
+}
+
+.main-card-profile-tilte img {
+  margin-top: 20px;
+  width: 160px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.main-card-profile-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+  width: 500px;
+  line-height: 1.5;
+}
+
+.main-card-line {
+  height: 1px;
+  background: gray;
+  opacity: 0.5;
+}
+
+.main-card-profile-text > div {
+  margin-bottom: 30px;
+}
+
+.main-card-profile-decs-box-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  margin-top: 15px;
+  gap: 25px;
+}
+
+.main-card-profile-decs-box-title::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 1px solid #3aebb6;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 120px;
+}
+
+.main-card-profile-decs-box-title::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #3aebb6;
+  border: 1px solid #3aebb6;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 8px;
+  left: 123px;
+}
+
+.main-card-profile-decs-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+  gap: 25px;
+}
+
+.main-card-profile-decs-box::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 1px solid #3aebb6;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 120px;
+}
+
+.main-card-profile-decs-box-line {
+  position: absolute;
+  width: 1px;
+  border-right: 2px solid #3aebb6;
+  top: -96px;
+  left: 127px;
+  bottom: 5px;
+}
+
+.main-card-profile-ps-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.portfolio-wab-link {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  height: auto;
+  gap: 20px;
+  padding: 65px 80px 65px 80px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 1px 1px 10px 1px #d3d3d3;
+}
+
+.portfolio-wab-link-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-wab-link-title {
+  font-family: "PoppinsRegular", "SpoqaHanSansNeoBold", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.portfolio-wab-link-sub-title {
+  font-weight: 400;
+  font-family: "PoppinsRegular", "SpoqaHanSansNeoBold", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: #646f7c;
+}
+
+.portfolio-wab-link-desc {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-img-wrap {
+  z-index: 10;
+  position: relative;
+  width: 350px;
+  height: 300px;
+  padding: 15px 16px 82px 14px;
+  background: url(../assets/mac_pc.png) no-repeat;
+  background-size: contain;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-text-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+}
+
+.portfolio-language {
+  display: flex;
+  width: 50px;
+  height: auto;
+  gap: 15px;
+}
+
+.portpolio-notion-link {
+  text-decoration: none;
+  color: black;
+}
+
+.portpolio-notion-link-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  border: 1px solid #e9ebee;
+  border-radius: 1rem;
+  margin-top: 50px;
+}
+
+.link-svg {
+  color: #3aebb6;
+}
+
+.portpolio-notion-link-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.portpolio-notion-link-btn h4 {
+  font-family: "PoppinsRegular", "SpoqaHanSansNeoBold", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #42464b;
+}
+
+.portpolio-notion-link-btn p {
+  font-family: "PoppinsRegular", "SpoqaHanSansNeoBold", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #757a7f;
+}
+
+.portpolio-notion-link-box:hover {
+  transition: 0.5s;
+
+  background: #3aebb6;
+
+  .link-svg {
+    color: white;
+  }
+
+  .portpolio-notion-link-btn h4 {
+    color: white;
+  }
+
+  .portpolio-notion-link-btn p {
+    color: white;
+  }
+}
+
+@media (max-width: 1450px) {
+  .header-nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 70px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 5px 1px #d3d3d3;
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-card-profile-tilte {
+    width: 200px;
+    height: 135vh;
+  }
+}
