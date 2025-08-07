@@ -79,6 +79,7 @@ function App() {
                   <MainInfoSection main_desc="성과를 인정받았습니다. 함께 일하고 싶은 동료가 되자는 가치관을 가지고 열린 태도로 소통하고" />
                   <MainInfoSection main_desc="흐름을 함께 만드는 동료로서 역활을 성실히 해낼 준비가 되어있습니다" />
                 </div>
+
                 <div className="main-card-btn">
                   <MainInfoSection main_btn="More +" />
                 </div>
