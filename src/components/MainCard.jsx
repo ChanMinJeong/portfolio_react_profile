@@ -59,18 +59,11 @@ const PortFolioCardContentTitle = ({ pofol_title, pofol_sub_title }) => (
   </div>
 );
 
-const PortFolioCardContentDesc = ({ pofol_tool, pofol_desc, pofol_img }) => (
+const PortFolioCardContentDesc = ({ pofol_tool, pofol_desc }) => (
   <div>
-    <div>
-      <div className="desc-wrap">
-        <div>
-          {pofol_tool && <p className="portfolio-desc">{pofol_tool}</p>}
-        </div>
-        <div>
-          {pofol_desc && <p className="portfolio-desc">{pofol_desc}</p>}
-        </div>
-      </div>
-      {pofol_img && <div className="portfolio-img">{pofol_img}</div>}
+    <div className="desc-wrap">
+      <div>{pofol_tool && <p className="portfolio-desc">{pofol_tool}</p>}</div>
+      <div>{pofol_desc && <p className="portfolio-desc">{pofol_desc}</p>}</div>
     </div>
   </div>
 );
