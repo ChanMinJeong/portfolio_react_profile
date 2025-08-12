@@ -11,7 +11,7 @@ const IntroCardContent = ({
     {main_title_2 && <h2 className="main-title_2">{main_title_2}</h2>}
     {main_desc && <p className="main-desc">{main_desc}</p>}
     {main_btn && (
-      <a href="https://www.notion.so/202e1f1c9cde80d98d98dce44bc5fe16?source=copy_link">
+      <a href="https://www.notion.so/24de1f1c9cde80cd9e56fcdc67f226c7o">
         <div className="main-btn">{main_btn}</div>
       </a>
     )}

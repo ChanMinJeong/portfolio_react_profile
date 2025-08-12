@@ -292,7 +292,7 @@ function App() {
                     </div>
                   </div>
                   <a
-                    href="https://www.notion.so/202e1f1c9cde80d98d98dce44bc5fe16?source=copy_link"
+                    href="https://www.notion.so/24de1f1c9cde80cd9e56fcdc67f226c7"
                     className="portpolio-notion-link"
                   >
                     <div className="portpolio-notion-link-box">
