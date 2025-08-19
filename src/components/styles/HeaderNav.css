@@ -107,3 +107,32 @@
     height: 25px;
   }
 }
+
+@media (max-width: 767px) {
+  .header-nav-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+
+    .header-nav-sub-title,
+    .header-nav-ps {
+      display: none;
+    }
+  }
+
+  .header-nav-title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+    margin: 0;
+  }
+
+  .header-nav-decs svg {
+    width: 25px;
+    height: 25px;
+  }
+}

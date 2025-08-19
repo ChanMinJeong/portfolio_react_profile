@@ -358,3 +358,164 @@
     height: 135vh;
   }
 }
+
+@media (max-width: 767px) {
+  /* 공통 폭 변수(선택) */
+  :root {
+    --card-max: 900px;
+    --card-min: 500px; /* 여기서 '고정 하한'을 500px로 */
+  }
+
+  /* 카드 컨테이너 3종 */
+  .main-card-home,
+  .main-card-profile,
+  .portfolio-wab-link {
+    /* 1) 뷰포트가 넓을 땐 최대 900px
+    2) 그 사이에선 92vw로 유연하게
+     3) 하지만 500px보다 더 작아지지 않음(=고정 하한) */
+    width: clamp(var(--card-min), 92vw, var(--card-max));
+    min-width: var(--card-min);
+
+    /* 패딩도 유연하게 축소 */
+    padding: clamp(24px, 6vw, 65px) clamp(20px, 8vw, 80px);
+
+    /* 라운드도 살짝 축소되며 자연스럽게 */
+    border-radius: clamp(16px, 2vw, 40px);
+  }
+
+  /* 카드 스택 간격도 축소 */
+  .main-card-wrap {
+    gap: clamp(24px, 8vw, 80px);
+  }
+
+  /* 큰 타이틀 */
+  .main-card-profile-tilte-text {
+    font-size: clamp(18px, 2.8vw, 20px); /* 20px -> 모바일에서 18px까지 */
+    font-weight: 600;
+  }
+
+  /* 본문 영역 폭 – 500px로 못 넘고, 뷰포트에 따라 같이 줄어듦 */
+  .main-card-profile-text {
+    width: clamp(320px, 55vw, 500px);
+    line-height: 1.6;
+    margin-top: clamp(20px, 6vw, 55px);
+  }
+
+  /* 구분선/간격 */
+  .main-card-profile-text > div {
+    margin-bottom: clamp(14px, 3vw, 30px);
+  }
+  .main-card-line {
+    opacity: 0.5;
+  }
+
+  /* 프로필 이미지도 함께 축소 */
+  .main-card-profile-tilte img {
+    width: clamp(110px, 18vw, 160px);
+    height: clamp(120px, 20vw, 180px);
+  }
+
+  /* 포트폴리오 썸네일 프레임 */
+  .portfolio-img-wrap {
+    width: clamp(240px, 40vw, 350px);
+    /* 원래 350x300 비율 근사치 */
+    aspect-ratio: 7 / 6;
+    height: auto; /* 비율로 높이 자동 */
+    padding: clamp(10px, 2vw, 15px) clamp(10px, 2vw, 16px)
+      clamp(56px, 6vw, 82px) clamp(10px, 2vw, 14px);
+  }
+
+  /* 포트폴리오 설명 영역 */
+  .portfolio-text-wrap {
+    width: clamp(240px, 48vw, 400px);
+  }
+
+  /* 썸네일과 텍스트 사이 간격 */
+  .portfolio-wab-link-desc {
+    gap: clamp(16px, 4vw, 40px);
+    flex-wrap: wrap; /* 폭이 좁아지면 아래로 넘겨서 겹침 방지 */
+  }
+
+  /* 버튼/라벨류도 축소 */
+  .portpolio-notion-link-btn h4 {
+    font-size: clamp(14px, 2.6vw, 16px);
+  }
+  .portpolio-notion-link-btn p {
+    font-size: clamp(12px, 2.4vw, 14px);
+  }
+
+  /* 포트폴리오 사용 기술 아이콘 */
+  .portfolio-language {
+    gap: clamp(10px, 3vw, 20px);
+  }
+  .portfolio-language img,
+  .portfolio-language svg {
+    width: clamp(20px, 6vw, 40px);
+    height: clamp(20px, 6vw, 40px);
+  }
+  /* 큰 타이틀 */
+  .main-card-profile-tilte-text {
+    font-size: clamp(18px, 2.8vw, 20px); /* 20px -> 모바일에서 18px까지 */
+    font-weight: 600;
+  }
+
+  /* 본문 영역 폭 – 500px로 못 넘고, 뷰포트에 따라 같이 줄어듦 */
+  .main-card-profile-text {
+    width: clamp(320px, 55vw, 500px);
+    line-height: 1.6;
+    margin-top: clamp(20px, 6vw, 55px);
+  }
+
+  /* 구분선/간격 */
+  .main-card-profile-text > div {
+    margin-bottom: clamp(14px, 3vw, 30px);
+  }
+  .main-card-line {
+    opacity: 0.5;
+  }
+
+  /* 프로필 이미지도 함께 축소 */
+  .main-card-profile-tilte img {
+    width: clamp(110px, 18vw, 160px);
+    height: clamp(120px, 20vw, 180px);
+  }
+
+  /* 포트폴리오 썸네일 프레임 */
+  .portfolio-img-wrap {
+    width: clamp(240px, 40vw, 350px);
+    /* 원래 350x300 비율 근사치 */
+    aspect-ratio: 7 / 6;
+    height: auto; /* 비율로 높이 자동 */
+    padding: clamp(10px, 2vw, 15px) clamp(10px, 2vw, 16px)
+      clamp(56px, 6vw, 82px) clamp(10px, 2vw, 14px);
+  }
+
+  /* 포트폴리오 설명 영역 */
+  .portfolio-text-wrap {
+    width: clamp(240px, 48vw, 400px);
+  }
+
+  /* 썸네일과 텍스트 사이 간격 */
+  .portfolio-wab-link-desc {
+    gap: clamp(16px, 4vw, 40px);
+    flex-wrap: wrap; /* 폭이 좁아지면 아래로 넘겨서 겹침 방지 */
+  }
+
+  /* 버튼/라벨류도 축소 */
+  .portpolio-notion-link-btn h4 {
+    font-size: clamp(14px, 2.6vw, 16px);
+  }
+  .portpolio-notion-link-btn p {
+    font-size: clamp(12px, 2.4vw, 14px);
+  }
+
+  /* 포트폴리오 사용 기술 아이콘 */
+  .portfolio-language {
+    gap: clamp(10px, 3vw, 20px);
+  }
+  .portfolio-language img,
+  .portfolio-language svg {
+    width: clamp(20px, 6vw, 40px);
+    height: clamp(20px, 6vw, 40px);
+  }
+}
