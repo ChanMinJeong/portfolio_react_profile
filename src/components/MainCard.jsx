@@ -62,8 +62,8 @@ const PortFolioCardContentTitle = ({ pofol_title, pofol_sub_title }) => (
 const PortFolioCardContentDesc = ({ pofol_tool, pofol_desc }) => (
   <div>
     <div className="desc-wrap">
-      <div>{pofol_tool && <p className="portfolio-desc">{pofol_tool}</p>}</div>
-      <div>{pofol_desc && <p className="portfolio-desc">{pofol_desc}</p>}</div>
+      <div>{pofol_tool && <p className="portfolio-desc1">{pofol_tool}</p>}</div>
+      <div>{pofol_desc && <p className="portfolio-desc2">{pofol_desc}</p>}</div>
     </div>
   </div>
 );

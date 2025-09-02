@@ -133,7 +133,7 @@
 
 .title-wrap {
   display: flex;
-  width: 200px;
+  width: auto;
   height: 40px;
   margin-bottom: 10px;
 }
@@ -160,11 +160,17 @@
   height: 35px;
 }
 
-.desc-wrap div {
-  width: 250px;
+.portfolio-desc1 {
+  width: 80px;
+  font-family: "PoppinsRegular", "SpoqaHanSansNeoRegular", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #212529;
 }
 
-.portfolio-desc {
+.portfolio-desc2 {
+  width: 200px;
   font-family: "PoppinsRegular", "SpoqaHanSansNeoRegular", sans-serif;
   font-size: 1rem;
   line-height: 1.8;

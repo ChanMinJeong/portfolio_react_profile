@@ -12,6 +12,7 @@ import Carrot from "./assets/carrot_portfolio_page.png";
 import React from "./assets/react_portfolio_page.png";
 import Publisher from "./assets/publisher_img.png";
 import See from "./assets/see.png";
+import OpenMind from "./assets/openmind_portfolio_page.png";
 
 function HeaderSection() {
   return (
@@ -187,6 +188,41 @@ function App() {
                   </div>
                   <div className="portfolio-wab-link-desc">
                     <div className="portfolio-img-wrap">
+                      <a href="https://openm.netlify.app/">
+                        <img
+                          className="portfolio-img"
+                          src={OpenMind}
+                          alt="코드잇 프론트엔드 팀 프로젝트 오픈마인드"
+                        />
+                      </a>
+                    </div>
+                    <div className="portfolio-text-wrap">
+                      <div>
+                        <PortFolioTitleSection pofol_title="익명 커뮤니티 오픈마인드" />
+                        <PortFolioTitleSection pofol_sub_title="2025. 08. 코드잇 팀 프로젝트" />
+                        <PortFolioDescSection
+                          pofol_tool="작업부분:"
+                          PortFolioSection
+                          pofol_desc="웹 퍼블리싱, 프론트엔드"
+                        />
+
+                        <PortFolioDescSection
+                          pofol_tool="작업툴:"
+                          PortFolioSection
+                          pofol_desc="VS Code"
+                        />
+                        <PortFolioDescSection pofol_tool="작업언어" />
+                      </div>
+                      <div className="portfolio-language">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="portfolio-wab-link-desc">
+                    <div className="portfolio-img-wrap">
                       <a href="https://portfolio-nike-homepage-tkmu-git-main-chanminjeongs-projects.vercel.app/">
                         <img
                           className="portfolio-img"
@@ -258,6 +294,7 @@ function App() {
                       </div>
                     </div>
                   </div>
+
                   <div className="portfolio-wab-link-desc">
                     <div className="portfolio-img-wrap">
                       <a href="#">
@@ -291,6 +328,7 @@ function App() {
                       </div>
                     </div>
                   </div>
+
                   <a
                     href="https://www.notion.so/24de1f1c9cde80cd9e56fcdc67f226c7"
                     className="portpolio-notion-link"
